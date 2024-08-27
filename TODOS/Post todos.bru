@@ -1,0 +1,15 @@
+meta {
+  name: Post todos
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:4000/api/todos?body=hello
+  body: json
+  auth: none
+}
+
+params:query {
+  body: hello
+}

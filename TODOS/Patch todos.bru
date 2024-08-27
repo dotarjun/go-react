@@ -1,0 +1,21 @@
+meta {
+  name: Patch todos
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:4000/api/todos
+  body: json
+  auth: none
+}
+
+params:query {
+  ~body: hello
+}
+
+body:json {
+  {
+    "body": "test"
+  }
+}
